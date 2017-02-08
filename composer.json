@@ -1,0 +1,21 @@
+{
+    "name": "alveum/laravel-sftp",
+    "description": "Integrate SFTP into Laravel's filesystem.",
+    "type": "library",
+    "require": {
+        "thomasgenster/flysystem-sftp": "^1.0",
+        "illuminate/support": "^5.0"
+    },
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Janyk Steenbeek",
+            "email": "janyk.steenbeek@alveum.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Alveum\\SFTP\\": "src/"
+        }
+    }
+}
