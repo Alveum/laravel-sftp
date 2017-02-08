@@ -3,10 +3,11 @@
 namespace Alveum\SFTP;
 
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Sftp\SftpAdapter;
 
-class SFTPServiceProvider
+class SFTPServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
