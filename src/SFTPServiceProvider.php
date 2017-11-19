@@ -17,15 +17,19 @@ class SFTPServiceProvider extends ServiceProvider
     public function boot()
     {
         Storage::extend('sftp', function ($app, $config) {
+
+            $config = collect($config);
+
             return new Filesystem(new SftpAdapter([
                 'host' => $config['host'],
                 'port' => $config['port'],
                 'username' => $config['username'],
                 'password' => $config['password'],
-                'privateKey' => $config['private_key'],
-                'root' => $config['root'],
-                'timeout' => $config['timeout'],
+                'privateKey' => $config->get('private_key'),
+                'root' => $config->get('root'),
+                'timeout' => $config->get('timeout', 30),
             ]));
+          
         });
     }
 
