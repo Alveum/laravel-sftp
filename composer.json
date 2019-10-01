@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "thomasgenster/flysystem-sftp": "^1.0",
-        "illuminate/support": "^5.0"
+        "illuminate/support": "^6.0"
     },
     "license": "Apache License 2.0",
     "authors": [
