@@ -6,7 +6,7 @@
         "thomasgenster/flysystem-sftp": "^1.0",
         "illuminate/support": "^5.0"
     },
-    "license": "Apache License 2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Janyk Steenbeek",
