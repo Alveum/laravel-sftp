@@ -27,6 +27,7 @@ class SFTPServiceProvider extends ServiceProvider
                 'password' => $config['password'],
                 'privateKey' => $config->get('private_key'),
                 'root' => $config->get('root'),
+                'visibility' => $config->get('visibility', 'private'),
                 'timeout' => $config->get('timeout', 30),
             ]));
           
